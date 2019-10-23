@@ -1,0 +1,12 @@
+import requests
+
+token = "1b9c6bca1b9c6bca1b9c6bca201bf1fdfa11b9c1b9c6bca462c104350cc59c45a815490"
+v = 5.102
+domain = "votentougarno"
+link = "https://api.vk.com/method/wall.get?&domain=votentougarno"
+
+response = requests.get("https://api.vk.com/method/wall.get", params={"access_token": token,
+                                                                      "v": v,
+                                                                      "domain": domain})
+
+#Кол во лайков, посты и тд можно теперь найти
